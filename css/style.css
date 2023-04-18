@@ -1,0 +1,212 @@
+body {
+  background-color: #ffffff;
+}
+
+.container-padre {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  /* height: 30vh; */
+  /* grid-auto-rows: minmax(100px, auto); */
+}
+
+.container-padre div {
+  /* border: solid 2px red; */
+}
+.paleta {
+  background-color: #1d9bf0;
+  background-color: #eff3f4;
+  background-color: #ffffff;
+}
+.secton-img-twitter {
+  display: block;
+
+  position: relative;
+}
+/* imagen de twitter */
+.container-img {
+  position: relative;
+  left: 380px;
+  line-height: 42px;
+  display: flex;
+  width: 40%;
+}
+.div-img {
+  width: 100%;
+}
+.div-img img {
+  width: 18%;
+  height: 100%;
+}
+/* boton de numeral */
+.botoNumeral {
+  position: relative;
+  left: 380px;
+  line-height: 42px;
+  display: flex;
+  width: 40%;
+  padding-top: 10px;
+}
+.boton-numer {
+  width: 100%;
+}
+.boton-numer:hover {
+  background-color: #f0eeed;
+}
+.boton-numer i {
+  font-weight: bold;
+  color: black;
+  font-size: 30px;
+  margin-left: 12px;
+}
+
+.boton-numer span {
+  margin-left: 28px;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+
+/* boton de confijuracion */
+.botonConfig {
+  position: relative;
+  left: 380px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  width: 40%;
+  font-weight: bold;
+  color: black;
+  padding-top: 10px;
+}
+.boton-conf {
+  width: 100%;
+}
+.boton-conf:hover {
+  background-color: #f0eeed;
+}
+.boton-conf span {
+  margin-left: 28px;
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+.boton-conf i {
+  font-weight: bold;
+  color: black;
+  font-size: 25px;
+  margin-left: 12px;
+}
+/* estilos de centro */
+.iconos {
+  display: flex;
+  padding: 6px;
+  justify-content: space-between;
+}
+.iconos-flech i {
+  font-size: 27px;
+  margin-top: 30px;
+}
+
+.input-icon input {
+  position: relative;
+  width: 500px;
+  height: 5vh;
+  background-color: #eff3f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-icon input::placeholder {
+  padding: 50px;
+}
+
+.input-icon i {
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  left: 735px;
+}
+.icon-vertical i {
+  font-size: 23px;
+  margin-top: 30px;
+  padding: 6px;
+}
+/*  texto y bootone */
+.container-text {
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+}
+.texto-p p {
+  font-size: 15px;
+}
+.text-pregunt {
+  font-size: 23px;
+}
+.container-apple {
+  width: 94%;
+}
+.container-apple button {
+  background-color: transparent;
+  border: none;
+}
+.container-apple img {
+  width: 6%;
+  padding: 5px;
+}
+.container-google {
+  width: 100%;
+}
+.container-google button {
+  background-color: transparent;
+  border: none;
+}
+.container-google img {
+  width: 7%;
+  padding: 5px;
+}
+.container-crear {
+  width: 94%;
+  /* border: solid 3px red; */
+}
+.container-crear button {
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+}
+
+.border-container {
+  padding-top: 10px;
+  padding: 10px;
+  /* border: solid 3px red; */
+}
+/* cuerpo */
+.body-text {
+  width: 80%;
+  font-size: 15px;
+  padding: 12px;
+}
+.body-text span {
+  color: #1d9bf0;
+}
+/* CUERPO DE TWITTER */
+.cuerpo-lista {
+  position: relative;
+  top: -200px;
+  display: flex;
+  justify-content: center;
+  width: 49%;
+  left: 330px;
+  background-color: aqua;
+}
+.cuerpo-lista ul {
+  display: flex;
+
+  /* background-color: aqua; */
+}
+.cuerpo-lista li {
+  display: flex;
+  margin-left: 20px;
+
+  /* background-color: aqua; */
+}
