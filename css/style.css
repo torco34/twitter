@@ -178,7 +178,6 @@ body {
 .border-container {
   padding-top: 10px;
   padding: 10px;
-  /* border: solid 3px red; */
 }
 /* cuerpo */
 .body-text {
@@ -192,21 +191,160 @@ body {
 /* CUERPO DE TWITTER */
 .cuerpo-lista {
   position: relative;
-  top: -200px;
+  left: 0;
   display: flex;
   justify-content: center;
-  width: 49%;
-  left: 330px;
-  background-color: aqua;
+  align-items: center;
+  width: 100%;
 }
 .cuerpo-lista ul {
   display: flex;
-
-  /* background-color: aqua; */
+  justify-content: center;
 }
 .cuerpo-lista li {
   display: flex;
-  margin-left: 20px;
+  margin: 10px;
+  font-weight: bold;
+  color: rgb(128, 124, 124);
+  font-size: 15px;
+}
+.cuerpo-lista li.active {
+  border-bottom: 4px solid #1d9bf0;
+  padding-bottom: 10px;
+  color: black;
+}
+.cuerpo-lista li:hover {
+  border-bottom: 4px solid #1d9bf0;
+  padding-bottom: 10px;
+}
 
-  /* background-color: aqua; */
+.cuerpo-lista li:hover {
+  color: black;
+}
+/* textocentro */
+.texto1 {
+  color: rgb(5, 4, 4);
+  font-size: 13px;
+  line-height: 15px;
+  display: grid;
+  /* flex-direction: column; */
+  padding-left: 20px;
+  align-items: center;
+}
+.ico i {
+  position: relative;
+  /* top: -110px; */
+  font-size: 23px;
+  /* padding: 6px; */
+  /* left: 470px; */
+}
+.texto1 span {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+.texto2 {
+  color: rgb(5, 4, 4);
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.texto2 span {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.twitter {
+  font-size: 10px;
+}
+
+.texto3 {
+  color: rgb(5, 4, 4);
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.texto3 span {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.twitter {
+  font-size: 10px;
+}
+.texto4 {
+  color: rgb(5, 4, 4);
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.texto4 span {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.twitter {
+  font-size: 10px;
+}
+.texto5 {
+  color: rgb(5, 4, 4);
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.texto5 span {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.twitter {
+  font-size: 10px;
+}
+.texto6 {
+  color: rgb(5, 4, 4);
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.texto6 span {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.twitter {
+  font-size: 10px;
+}
+.texto7 {
+  color: rgb(5, 4, 4);
+  font-size: 13px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.texto7 span {
+  color: black;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.twitter {
+  font-size: 10px;
+  color: rgb(128, 124, 124);
+  margin-top: -160px;
 }
