@@ -338,6 +338,8 @@ body {
 }
 /* SECTION DEL FOOTER */
 .footer {
+  position: relative;
+  z-index: -1;
   color: #ffffff;
   background-color: #1d9bf0;
 }
