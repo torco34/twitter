@@ -3,31 +3,18 @@ body {
   scroll-behavior: smooth;
   background-color: #f9f9f9;
   font-size: calc(2em + 2vw);
+  overflow-x: hidden;
 }
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 .container-padre {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  /* height: 30vh; */
-  /* grid-auto-rows: minmax(100px, auto); */
 }
 
-.container-padre div {
-  /* border: solid 2px red; */
-}
-.paleta {
-  background-color: #1d9bf0;
-  background-color: #eff3f4;
-  background-color: #ffffff;
-}
-.secton-img-twitter {
-  display: block;
-
-  position: relative;
-}
+/* SECTIOON IZQUIERDA */
 /* imagen de twitter */
 .container-img-twitter {
   display: flex;
@@ -35,7 +22,6 @@ html {
   flex-direction: column;
   height: 100%;
   padding: 2rem;
-  border: solid rgb(65, 204, 88) 2px;
 }
 .div-img {
   width: 100%;
@@ -109,14 +95,15 @@ html {
 .container-buscador {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  padding: 2rem;
 }
 .div-inpu-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 350px;
-  border: solid 2px red;
+  width: 380px;
+  padding: 0.6rem;
+  border: solid 2px #ccc;
 }
 .div-inpu-icon i {
   font-size: 1.4rem;
@@ -138,224 +125,150 @@ html {
 
 .icon-vertical i {
   font-size: 1.4rem;
-  border: solid 2px red;
+  cursor: pointer;
 }
 
-/*  texto y bootone */
+/* SECTION DE BOTONES */
 .container-text {
   font-weight: bold;
-  color: black;
-  font-size: 15px;
+  color: rgb(19, 18, 18);
+  font-size: 2rem;
+
+  margin-top: 2rem;
+  text-align: center;
 }
-.texto-p p {
-  font-size: 15px;
+.div-parrafo p {
+  font-size: 1.2rem;
+  color: rgb(128, 124, 124);
 }
-.text-pregunt {
-  font-size: 23px;
-}
+
 .container-apple {
-  width: 94%;
+  width: 100%;
+  margin-top: 10px;
 }
-.container-apple button {
-  background-color: transparent;
-  border: none;
+.container-apple div {
+  font-weight: bold;
+  color: rgb(19, 18, 18);
+  padding: 5px;
+  font-size: 1.4rem;
 }
 .container-apple img {
-  width: 6%;
+  width: 8%;
   padding: 5px;
 }
 .container-google {
   width: 100%;
+  margin-top: 10px;
 }
 .container-google button {
   background-color: transparent;
   border: none;
+  padding: 5px;
+  font-size: 1.3rem;
+  color: #000;
 }
 .container-google img {
-  width: 7%;
+  width: 9%;
   padding: 5px;
 }
 .container-crear {
-  width: 94%;
-  /* border: solid 3px red; */
+  width: 100%;
+  margin-top: 10px;
 }
-.container-crear button {
+.container-crear a {
   background-color: transparent;
   border: none;
-  padding: 5px;
+  padding: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: rgb(51, 47, 47);
 }
 
-.border-container {
-  padding-top: 10px;
-  padding: 10px;
+.container-text-botones {
+  padding-top: 20px;
+  color: rgb(128, 124, 124);
 }
 /* cuerpo */
-.body-text {
-  width: 80%;
-  font-size: 15px;
-  padding: 12px;
-}
-.body-text span {
+
+.container-text-botones span {
   color: #1d9bf0;
 }
-/* CUERPO DE TWITTER */
-.cuerpo-lista {
-  position: relative;
-  left: 0;
+/* HEADER DE TWITTER */
+.container-texto {
   display: flex;
+  align-self: center;
   justify-content: center;
-  align-items: center;
   width: 100%;
+  text-decoration: none;
+  list-style: none;
+  left: 0;
+  margin-top: 20px;
 }
-.cuerpo-lista ul {
+.container-texto ul {
+  position: relative;
   display: flex;
-  justify-content: center;
+  width: 590px;
 }
-.cuerpo-lista li {
-  display: flex;
-  margin: 10px;
-  font-weight: bold;
-  color: rgb(128, 124, 124);
+.container-texto ul li {
+  /* padding: 2px; */
+  margin-left: 10px;
   font-size: 15px;
+  text-decoration: none;
+  list-style: none;
+  color: rgb(128, 124, 124);
+  padding: 11px;
 }
-.cuerpo-lista li.active {
-  border-bottom: 4px solid #1d9bf0;
-  padding-bottom: 10px;
-  color: black;
+.container-texto li.active {
+  background-color: #f0eeed;
+  cursor: pointer;
+  color: #000;
+  border-bottom: 3px solid #1d9bf0;
 }
-.cuerpo-lista li:hover {
-  border-bottom: 4px solid #1d9bf0;
-  padding-bottom: 10px;
+.container-texto li:hover {
+  background-color: #f0eeed;
+  cursor: pointer;
 }
 
-.cuerpo-lista li:hover {
-  color: black;
-}
-/* textocentro */
-.texto1 {
-  color: rgb(5, 4, 4);
+/*  TEXTO DE BODY  */
+.texto {
+  color: rgb(128, 124, 124);
   font-size: 13px;
-  line-height: 15px;
-  display: grid;
+  line-height: 1.8rem;
+  display: flex;
+  flex-direction: column;
 }
 .div-container-tendencia {
-  padding-left: 36px;
-  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
 }
 .ico i {
   position: relative;
-  left: 500px;
-  top: -80px;
   font-size: 23px;
   color: rgb(128, 124, 124);
 }
-.texto1 span {
+.texto span {
   color: black;
-  font-size: 14px;
-  font-weight: bold;
-}
-.texto2 {
-  color: rgb(5, 4, 4);
   font-size: 13px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.texto2 span {
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.texto3 {
-  color: rgb(5, 4, 4);
-  font-size: 13px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.texto3 span {
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.texto4 {
-  color: rgb(5, 4, 4);
-  font-size: 13px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.texto4 span {
-  color: black;
-  font-size: 14px;
   font-weight: bold;
 }
 
 .twitter {
   font-size: 10px;
-}
-.texto5 {
-  color: rgb(5, 4, 4);
-  font-size: 13px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.texto5 span {
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.texto6 {
-  color: rgb(5, 4, 4);
-  font-size: 13px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.texto6 span {
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.texto7 {
-  color: rgb(5, 4, 4);
-  font-size: 13px;
-  line-height: 15px;
-  display: flex;
-  align-items: center;
-}
-
-.texto7 span {
-  color: black;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.twitter {
-  font-size: 10px;
-  color: rgb(128, 124, 124);
-  margin-top: -10px;
+  margin-top: -1rem;
 }
 /* SECTION DEL FOOTER */
 .footer {
   position: relative;
   z-index: -1;
   color: #ffffff;
+  padding: 1rem;
   background-color: #1d9bf0;
 }
+
 .div-botones {
   display: flex;
-  justify-content: center;
   align-items: center;
   padding: 30px;
   font-size: 15px;
@@ -365,25 +278,29 @@ html {
   background-color: transparent;
   color: #ffffff;
   padding: 6px;
+  width: 100%;
+  margin-left: 20px;
+  cursor: pointer;
 }
+
 .registro {
   padding: 6px;
-}
-.div-botones button {
-  margin: 8px;
-  font-weight: bold;
+  width: 100%;
+  margin-left: 34px;
 }
 
 .div-text-foot {
   text-align: center;
-  font-weight: bold;
   padding: 20px;
-  /* line-height: 42px; */
+  line-height: 20px;
 }
 
-.div-text-foot h3,
-p {
+.div-text-foot h3 {
   text-align: center;
   font-weight: bold;
-  line-height: 22px;
+  font-size: 2.3rem;
+}
+.div-text-foot p {
+  text-align: center;
+  font-size: 1.5rem;
 }
